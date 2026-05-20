@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/enriqew/pretransplant-pgx-priority/schemas/genotyping-priority.schema.json",
+  "title": "GenotypingPriorityEntry",
+  "description": "Single gene × population × organ priority score for pre-transplant genotyping.",
+  "type": "object",
+  "required": [
+    "gene_symbol",
+    "population_code",
+    "organ",
+    "population_affected_pct",
+    "delta_vs_baseline",
+    "waitlist_patients",
+    "priority_score"
+  ],
+  "properties": {
+    "gene_symbol": {
+      "type": "string",
+      "description": "HGNC gene symbol (e.g. CYP3A5, TPMT, NUDT15)",
+      "examples": ["CYP3A5", "TPMT", "NUDT15"]
+    },
+    "population_code": {
+      "type": "string",
+      "description": "1000 Genomes super/sub-population code, excluding CEU baseline",
+      "examples": ["MXL", "PEL", "CLM", "PUR", "ACB", "ASW", "YRI"]
+    },
+    "organ": {
+      "type": "string",
+      "description": "Target organ for transplantation",
+      "enum": ["kidney", "liver", "heart"]
+    },
+    "population_affected_pct": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Percentage of the cohort requiring dose or therapy adjustment"
+    },
+    "delta_vs_baseline": {
+      "type": "number",
+      "description": "Deviation in percentage points from CEU baseline population_affected_pct"
+    },
+    "waitlist_patients": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total patients on waitlist for this organ (most recent year, all covered countries)"
+    },
+    "priority_score": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Composite priority score: (pop_affected_pct/100) × |delta| × log(1 + waitlist/1000)"
+    }
+  },
+  "additionalProperties": false
+}
