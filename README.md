@@ -5,7 +5,6 @@ Combines CPIC clinical actionability scores, LATAM allele frequency divergences,
 waitlist volumes to identify where pre-emptive genotyping has the highest marginal benefit.
 
 ---
-
 ## What this project does
 
 Pre-emptive pharmacogenomic testing before transplantation lets clinical teams adjust immunosuppressant
