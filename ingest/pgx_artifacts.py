@@ -5,11 +5,11 @@ from pathlib import Path
 import requests
 from ._common import snapshot_dir, sha256_file, write_meta
 
-BASE_URL = "https://raw.githubusercontent.com/enriqew/pgx-latam-atlas/main/data/exports"
+BASE_URL = "https://raw.githubusercontent.com/enriqew/pgx-latam-atlas/main/artifacts"
 ARTIFACTS = [
     "actionability_ranking.json",
     "drug_impact_summary.json",
-    "meta.json",
+    "metadata.json",
 ]
 
 
