@@ -112,9 +112,28 @@ Both upstream datasets are produced by sibling repositories:
 ## Live Dashboard
 
 The interactive priority matrix is embedded in the portfolio at
-[enriqueredonda.dev/projects/pretransplant-pgx-priority](https://db0dj7zz9je7r.cloudfront.net/projects/pretransplant-pgx-priority).
+[eredonda.com/projects/pretransplant-pgx-priority](https://eredonda.com/projects/pretransplant-pgx-priority?utm_source=github&utm_medium=referral).
 
 ---
+
+## Data & licenses
+
+**OPTN/UNOS.** The waitlist artifact this project consumes carries OPTN-derived
+rows, so HRSA's acknowledgment applies, reproduced verbatim:
+
+> *This work was supported in part by Health Resources and Services Administration contract HHSH250-2019-00001C. The content is the responsibility of the authors alone and does not necessarily reflect the views or policies of the Department of Health and Human Services, nor does mention of trade names, commercial products, or organizations imply endorsement by the U.S. Government.*
+
+**1000 Genomes Project** Phase 3: open access. **PharmGKB**: CC BY-SA 4.0.
+**CPIC**: open-access guidelines. Other registry volumes come from IRODaT,
+CENATRA, ONT, Eurotransplant and Scandiatransplant via the upstream pipelines.
+
+## Methodological limits
+
+The cohorts are not the patients: 1000 Genomes panels are ancestry reference
+samples, transplant registries do not report recipient ancestry, and the
+country-to-cohort mapping is geographic. The ranking is a prioritisation
+exercise over public data, not clinical guidance. CPIC guidelines are the
+clinical reference.
 
 ## License
 
