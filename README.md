@@ -9,7 +9,7 @@ waitlist volumes to identify where pre-emptive genotyping has the highest margin
 
 Pre-emptive pharmacogenomic testing before transplantation lets clinical teams adjust immunosuppressant
 regimens at Day 1, rather than retrospectively after adverse events. The window of opportunity is the
-waitlist period — months to years for kidney, shorter for heart.
+waitlist period, months to years for kidney, shorter for heart.
 
 This project answers: **which gene should we test first, for which organ, and for which population?**
 
@@ -44,8 +44,8 @@ clinically significant organ queues.
 
 Both upstream datasets are produced by sibling repositories:
 
-- [pgx-latam-atlas](https://github.com/enriqew/pgx-latam-atlas) — 1000 Genomes × CPIC pharmacogenomics pipeline
-- [transplant-waitlist-atlas](https://github.com/enriqew/transplant-waitlist-atlas) — OPTN / CENATRA / Eurotransplant waitlist pipeline
+- [pgx-latam-atlas](https://github.com/enriqew/pgx-latam-atlas), 1000 Genomes × CPIC pharmacogenomics pipeline
+- [transplant-waitlist-atlas](https://github.com/enriqew/transplant-waitlist-atlas), OPTN / CENATRA / Eurotransplant waitlist pipeline
 
 ---
 
@@ -91,7 +91,7 @@ Both upstream datasets are produced by sibling repositories:
 ## Limitations
 
 - **Proxy populations.** 1000 Genomes LATAM cohorts (MXL, PEL, CLM, PUR) are not direct
-  clinical populations — they are research cohorts with specific recruitment criteria.
+  clinical populations, they are research cohorts with specific recruitment criteria.
 
 - **Diplotype assumptions.** Phenotype assignment follows CPIC star-allele → phenotype mapping.
   Novel or rare variants not captured in 1000G phase 3 are excluded.
